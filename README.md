@@ -19,15 +19,17 @@ In building this project, I learned how to use NestJS to build a RESTful API for
 * **Encoding and decoding**: The app can encode and decode input strings using a cryptographic algorithm.
 * **RESTful API**: The app uses a RESTful API to communicate between the frontend and backend.
 * **Responsive UI**: The UI is responsive and works on both desktop and mobile devices.
+* **Error Handling**: The app provides informative error messages if the input "losungswort" does not meet the required format.
+* **Helper Buttons**: The user can conveniently copy the encoded message and clear the fields of the decode card using dedicated buttons.
 
 ## How to run it locally
 * To run this app locally, you will need to have Node.js and npm installed on your machine.
 
 * Clone the repository to your local machine.
 * Navigate to the project directory in your terminal.
-* Install the dependencies by running the following command: npm install
-* Build the Angular application by running the following command: ng build
-* Start the backend server by running the following command: npm run start:dev
+* Install the dependencies by running the following command: ``npm install``
+* Build the Angular application by running the following command: ``ng build``
+* Start the backend server by running the following command: ``npm run start:dev``
 * Open a new terminal window and navigate to the project directory.
-* Start the frontend server by running the following command: npm start
+* Start the frontend server by running the following command: ``npm start``
 * Open your web browser and go to http://localhost:3000 to see the app in action.

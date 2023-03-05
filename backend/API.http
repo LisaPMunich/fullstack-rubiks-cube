@@ -1,0 +1,33 @@
+
+
+POST http://localhost:3000/crypto/encode
+Content-Type: application/json
+
+{
+  "rawInput": "Hallo hier bin ich",
+  "rawLosungswort": "SCHWARZ"
+}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 201, "Response status is not 201");
+  client.assert(response.body === "Hi  aei lrc l h ob   i  hn  ", "Text was not correctly encoded.");
+});
+%}
+
+###
+
+POST http://localhost:3000/crypto/decode
+Content-Type: application/json
+
+{
+  "encodedInput": "Hi  aei lrc l h ob   i  hn  ",
+  "losungswort": "SCHWARZ"
+}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 201, "Response status is not 201");
+  client.assert(response.body === "Hallo hier bin ich", "Text was not correctly decoded.");
+});
+%}

@@ -1,0 +1,40 @@
+<p-card header={{title}} [style]="{width: '360px'}" styleClass="p-card-shadow">
+
+  <ng-template pTemplate="content ">
+    <div class="grid">
+      <div class="field col-12">
+           <ng-content select="[inputArea]"></ng-content>
+      </div>
+
+      <div class="field col-12">
+        <ng-content select="[losungswortInput]"></ng-content>
+      </div>
+
+      <div class="field col-12">
+        <ng-content select="[error]"></ng-content>
+      </div>
+
+      <div class="field col-12">
+        <ng-content select="[submitButton]"></ng-content>
+      </div>
+
+      <div class="field col-12 mb-0">
+        <ng-content select="[outputArea]"></ng-content>
+      </div>
+
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+    <ng-content select="[cardFooter]"></ng-content>
+  </ng-template>
+
+</p-card>
+
+
+
+
+
+
+
+

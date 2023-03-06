@@ -22,6 +22,15 @@ In building this project, I learned how to use NestJS to build a RESTful API for
 * **Error Handling**: The app provides informative error messages if the input "losungswort" does not meet the required format.
 * **Helper Buttons**: The user can conveniently copy the encoded message and clear the fields of the decode card using dedicated buttons.
 
+## Documentation and Testing of endpoints
+The endpoints are documented using swagger. In order to run it, navigate to the backend directory and run ``npm run start``, then open ``localhost:3000/docs``
+Here you can see the endpoints and schema:
+![image](https://user-images.githubusercontent.com/117353352/223062883-f7acfcc2-2b57-43dc-a28a-18e1a3ce53e1.png)
+
+The tests run successfully, here an example of the tests for the /encode endpoint:
+![image](https://user-images.githubusercontent.com/117353352/223063342-fa2a2445-15b9-4993-8b6c-31d6c98d0581.png)
+![image](https://user-images.githubusercontent.com/117353352/223063439-a2f6a747-2f18-432d-9f01-b7aa80cc8803.png)
+
 ## How to run it locally
 * To run this app locally, you will need to have Node.js and npm installed on your machine.
 
